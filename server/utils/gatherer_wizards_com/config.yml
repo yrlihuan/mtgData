@@ -1,0 +1,31 @@
+site: gatherer.wizards.com
+fetch:
+  pattern: "http://gatherer.wizards.com/Pages/Search/Default.aspx?page=#{page}&output=standard&action=advanced&set=+%5b%22#{set}%22%5d"
+  cookie: "CardDatabaseSettings=0=0&1=zh-CN&2=0&14=1&3=13&4=0&5=1&6=15&7=0&8=1&9=1&10=19&11=4&12=8&15=1&16=0&13="
+  num_per_page: 25
+sets:
+  - name: Magic 2013
+    name_zh: 核心系列2013
+    count: 234
+    code: m13
+    time: 2012.07
+  - name: Avacyn Restored
+    name_zh: 艾维欣重临
+    count: 234
+    code: avr
+    time: 2012.05
+  - name: Dark Ascension
+    name_zh: 黑影笼罩
+    count: 171
+    code: dka
+    time: 2012.02
+  - name: Innistrad
+    name_zh: 依尼翠
+    count: 274
+    code: isd
+    time: 2011.10
+  - name: Magic 2012
+    name_zh: 
+    count: 234
+    code: m12
+    time: 2011.07
