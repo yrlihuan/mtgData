@@ -16,12 +16,12 @@ if $PROGRAM_NAME == __FILE__
 
   cfg['sets'].each do |dict|
     count = dict['count']
-    set = dict['name'].sub(' ', '%20')
+    set = dict['name'].gsub(' ', '%20')
 
     file_pattern = Helper.html_file_pattern(dict)
 
     pages = (count + num_per_page - 1) / num_per_page
-    1.upto(count/num_per_page) do |page|
+    0.upto(pages-1) do |page|
       url = eval("\"#{pattern}\"")
       file = file_pattern % page
 

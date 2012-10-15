@@ -1,9 +1,15 @@
 site: gatherer.wizards.com
 fetch:
   pattern: "http://gatherer.wizards.com/Pages/Search/Default.aspx?page=#{page}&output=standard&action=advanced&set=+%5b%22#{set}%22%5d"
+  image_pattern: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=#{id}&type=card"
   cookie: "CardDatabaseSettings=0=0&1=zh-CN&2=0&14=1&3=13&4=0&5=1&6=15&7=0&8=1&9=1&10=19&11=4&12=8&15=1&16=0&13="
   num_per_page: 25
 sets:
+  - name: Return to Ravnica
+    name_zh: 重返拉尼卡
+    count: 254
+    code: rtr
+    time: 2012.10
   - name: Magic 2013
     name_zh: 核心系列2013
     count: 234
@@ -25,7 +31,62 @@ sets:
     code: isd
     time: 2011.10
   - name: Magic 2012
-    name_zh: 
+    name_zh: 核心系列2012
     count: 234
     code: m12
     time: 2011.07
+  - name: New Phyrexia
+    name_zh: 新非瑞克西亚
+    count: 170
+    code: nph
+    time: 2011.05
+  - name: Mirrodin Besieged
+    name_zh: 围攻秘罗地
+    count: 150
+    code: mbs
+    time: 2011.02
+  - name: Scars of Mirrodin
+    name_zh: 秘罗地创痕
+    count: 234
+    code: som
+    time: 2010.10
+  - name: Magic 2011
+    name_zh: 核心系列2011
+    count: 234
+    code: m11
+    time: 2010.07
+  - name: Rise of the Eldrazi
+    name_zh: 奥札奇再起
+    count: 233
+    code: roe
+    time: 2010.04
+  - name: Worldwake
+    name_zh: 天地醒转
+    count: 145
+    code: wwk
+    time: 2010.02
+  - name: Zendikar
+    name_zh: 赞迪卡
+    count: 234
+    code: zen
+    time: 2009.10
+  - name: Magic 2010
+    name_zh: 核心系列2010
+    count: 234
+    code: m10
+    time: 2009.07
+  - name: Alara Reborn
+    name_zh: 阿拉若新生
+    count: 145
+    code: arb
+    time: 2009.04
+  - name: Conflux
+    name_zh: 聚流
+    count: 145
+    code: cfx
+    time: 2009.02
+  - name: Shards of Alara
+    name_zh: 阿拉若断片
+    count: 234
+    code: ala
+    time: 2008.10
